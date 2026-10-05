@@ -1,0 +1,33 @@
+import type { IconProps } from "../types";
+const Home01Icon = ({
+  size = 24,
+  width,
+  height,
+  color = "currentColor",
+  className,
+  strokeWidth = 1.5,
+  ...props
+}: IconProps) => (
+  <svg
+    width={width ?? size}
+    height={height ?? size}
+    className={className}
+    aria-hidden="true"
+    role="img"
+    color={color}
+    strokeWidth={strokeWidth}
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <path
+      stroke={color}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M3 10.565c0-.574 0-.861.074-1.126a2 2 0 0 1 .318-.65c.163-.22.39-.397.843-.75l6.783-5.275c.351-.273.527-.41.72-.462a1 1 0 0 1 .523 0c.194.052.37.189.721.462l6.783 5.275c.453.353.68.53.843.75.145.196.252.416.318.65.074.265.074.552.074 1.126V17.8c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874C19.48 21 18.92 21 17.8 21H6.2c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874C3 19.48 3 18.92 3 17.8z"
+    />
+  </svg>
+);
+export default Home01Icon;

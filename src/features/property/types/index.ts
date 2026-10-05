@@ -1,0 +1,32 @@
+export type {
+  Property,
+  PropertyDetail,
+  PropertyListing,
+  PropertyListingDetail,
+  ProjectOverviewBlock,
+  ProjectStoryAsideImage,
+  ProjectHighlight,
+  ProjectTimelineStatus,
+  ProjectTimelineItem,
+  ProjectPaymentPlanIcon,
+  ProjectPaymentPlan,
+  ProjectExpert,
+  ProjectNearbyPlace,
+  ProjectLocation,
+  ProjectFaqItem,
+  FloorPlanSubType,
+  FloorPlanUnit,
+  ProjectFloorPlans,
+  PropertyListingStatus,
+  PropertyDetailRow,
+  PropertyTransactionKind,
+  PropertyTransaction,
+  PropertyAgentSocialLink,
+} from "@/features/property/core/domain/entity/property.entity"
+
+export type {
+  PropertyDto,
+  PropertyDetailDto,
+  PropertyListingDto,
+  PropertyListingDetailDto,
+} from "@/features/property/core/data/dto/property.dto"

@@ -1,0 +1,33 @@
+import type { IconProps } from "../types";
+const Hexagon01Icon = ({
+  size = 24,
+  width,
+  height,
+  color = "currentColor",
+  className,
+  strokeWidth = 1.5,
+  ...props
+}: IconProps) => (
+  <svg
+    width={width ?? size}
+    height={height ?? size}
+    className={className}
+    aria-hidden="true"
+    role="img"
+    color={color}
+    strokeWidth={strokeWidth}
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <path
+      stroke={color}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M11.223 2.432c.284-.158.425-.237.575-.267a1 1 0 0 1 .403 0c.15.03.292.11.576.267l7.4 4.11c.3.167.45.25.558.369a1 1 0 0 1 .215.364c.05.153.05.324.05.667v8.117c0 .342 0 .514-.05.666a1 1 0 0 1-.215.364c-.109.119-.258.202-.558.368l-7.4 4.111c-.284.158-.425.237-.575.268a1 1 0 0 1-.403 0c-.15-.031-.292-.11-.576-.268l-7.4-4.11c-.3-.167-.45-.25-.558-.369a1 1 0 0 1-.215-.364C3 16.573 3 16.401 3 16.06V7.942c0-.343 0-.514.05-.667a1 1 0 0 1 .215-.364c.109-.119.258-.202.558-.368z"
+    />
+  </svg>
+);
+export default Hexagon01Icon;

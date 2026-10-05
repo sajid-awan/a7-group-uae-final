@@ -1,0 +1,33 @@
+import type { IconProps } from "../types";
+const CreditCardEditIcon = ({
+  size = 24,
+  width,
+  height,
+  color = "currentColor",
+  className,
+  strokeWidth = 1.5,
+  ...props
+}: IconProps) => (
+  <svg
+    width={width ?? size}
+    height={height ?? size}
+    className={className}
+    aria-hidden="true"
+    role="img"
+    color={color}
+    strokeWidth={strokeWidth}
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <path
+      stroke={color}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M2 10h20V8.2c0-1.12 0-1.68-.218-2.108a2 2 0 0 0-.874-.874C20.48 5 19.92 5 18.8 5H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2 6.52 2 7.08 2 8.2v7.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874C3.52 19 4.08 19 5.2 19H11m3.5 2 2.025-.405c.177-.035.265-.053.347-.085a1 1 0 0 0 .207-.111c.073-.05.136-.114.264-.242L21.5 16a1.414 1.414 0 1 0-2-2l-4.157 4.157a2 2 0 0 0-.242.264 1 1 0 0 0-.11.207c-.033.082-.05.17-.086.347z"
+    />
+  </svg>
+);
+export default CreditCardEditIcon;
